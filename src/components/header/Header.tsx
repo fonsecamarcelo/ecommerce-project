@@ -12,7 +12,7 @@ import './header.css'
 
 const Header = (props: Props) => {
 
-    const { title = 'ecommerce', shoppingCart = false } = props;
+    const { title = 'pics found', shoppingCart = false } = props;
 
     return (
         <div className='header-container row'>
@@ -20,7 +20,7 @@ const Header = (props: Props) => {
                 <div className='header-title-content'>
 
                     <div className='header-icon'>
-                        <GitlabLogo color='white' size={16} />
+                        <GitlabLogo color='white' size={28} />
                     </div>
 
                     <div className='header-title'>
@@ -32,7 +32,7 @@ const Header = (props: Props) => {
                 {shoppingCart && (
                     <div className='header-shopping-cart'>
                         <div className='header-shopping-cart-icon'>
-                            <ShoppingCartSimple color='white' size={14} />
+                            <ShoppingCartSimple color='white' size={26} />
                         </div>
                         <p>R$ 0,00</p>
                     </div>

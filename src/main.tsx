@@ -1,12 +1,17 @@
+// noinspection TypeScriptUnresolvedFunction,TypeScriptCheckImport
+
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Home from './pages/Home.tsx'
 import {
     createBrowserRouter,
     RouterProvider,
 } from "react-router-dom";
-import './index.css'
+
+import Home from './pages/Home.tsx'
 import ShoppingCart from "./pages/shoppingCart/ShoppingCart";
+import AcessProducts from "./pages/AcessProducts/AcessProducts";
+
+import './index.css'
 
 const router = createBrowserRouter([
     {
@@ -16,6 +21,10 @@ const router = createBrowserRouter([
     {
         path: '/carrinho',
         element: <ShoppingCart />
+    },
+    {
+        path: '/acessarprodutos/:id',
+        element: <AcessProducts />
     }
 ])
 
