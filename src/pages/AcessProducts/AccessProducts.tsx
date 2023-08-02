@@ -1,7 +1,7 @@
 import Header from "../../components/header/Header";
 import {Link, useParams} from "react-router-dom";
 import cardImages from '../../../cardImages.json'
-import WithoutItem from "../../components/WithoutItem/WithoutItem";
+import WithoutItem from "../../components/withoutItem/WithoutItem";
 import {ArrowBendUpLeft} from "phosphor-react";
 
 import './access-products.css'

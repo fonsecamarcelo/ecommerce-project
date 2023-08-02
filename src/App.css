@@ -2,3 +2,20 @@
   max-height: 100vh;
   max-width: 100vw;
 }
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.filter-icon {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  background-color: black;
+}
