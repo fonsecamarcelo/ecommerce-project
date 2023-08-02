@@ -1,0 +1,11 @@
+.without-item-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.without-item-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

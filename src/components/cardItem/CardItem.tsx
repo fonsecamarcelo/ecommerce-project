@@ -1,41 +1,48 @@
 import {Minus, Plus } from "phosphor-react";
+import {Link} from "react-router-dom";
+import './card-item.css'
 
 type Props = {
     id?: string;
-    price: number;
+    price?: number;
     image: string;
 }
-
-import './card-item.css'
-import {Link} from "react-router-dom";
 
 const CardItem = (props: Props) => {
 
     const {id, price, image } = props;
 
     return (
-        <div className='card-container row'>
+        <div className='teste row'>
+            <div className='card-container col-12'>
+                <div className='testedois'>
                     <p>{`id ${id}`}</p>
+                </div>
+                <div className='testetres'>
                     <img
                         src={image}
                         style={{ width: '200px', height: '200px', margin: '10px' }}
                     />
+                </div>
+                <div className='testequatro'>
                     <p>{`R$ ${price}`}</p>
+                </div>
 
                     <div className='card-price row'>
-                        <div className='col-md'>
+                        <div className='col-md-2'>
                             <Minus size={24} color='red'/>
 
                         </div>
-                        <div className='col-md'>
+                        <div className='col-md-2'>
                             <span>0</span>
                         </div>
-                        <div className='col-md'>
+                        <div className='col-md-2'>
                             <Plus size={24} color='green'/>
                         </div>
-                    </div>
+                </div>
 
-                    <Link to={`/acessarprodutos/${id}`}> acessar produtos </Link>
+                <Link to={`/acessarprodutos/${id}`}> acessar produtos </Link>
+            </div>
         </div>
     )
 }

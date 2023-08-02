@@ -9,7 +9,7 @@ import {
 
 import Home from './pages/Home.tsx'
 import ShoppingCart from "./pages/shoppingCart/ShoppingCart";
-import AcessProducts from "./pages/AcessProducts/AcessProducts";
+import AccessProducts from "./pages/AcessProducts/AccessProducts";
 
 import './index.css'
 
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
     },
     {
         path: '/acessarprodutos/:id',
-        element: <AcessProducts />
+        element: <AccessProducts />
     }
 ])
 

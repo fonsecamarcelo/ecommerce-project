@@ -1,0 +1,27 @@
+.access-product-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.access-product-go-to-home a {
+    display: flex;
+    padding: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.access-product-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #CCC;
+    -webkit-box-shadow: -8px -8px 45px -2px rgba(0,0,0,0.54);
+    -moz-box-shadow: -8px -8px 45px -2px rgba(0,0,0,0.54);
+    box-shadow: -8px -8px 45px -2px rgba(0,0,0,0.54);
+    max-width: 1250px;
+    min-width: 800px;
+    max-height: 500px;
+    min-height: 300px;
+}

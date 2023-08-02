@@ -1,30 +1,30 @@
-// import {Link} from "react-router-dom";
 
-import {GitlabLogo, ShoppingCartSimple} from "phosphor-react";
+import {GitlabLogo, ImageSquare, ShoppingCartSimple} from "phosphor-react";
 
 type Props = {
     title?: string;
     shoppingCart?: boolean;
 }
 
+import {Link} from "react-router-dom";
 import './header.css'
-// import ShoppingCart from "../shoppingCart/ShoppingCart";
+
 
 const Header = (props: Props) => {
 
     const { title = 'pics found', shoppingCart = false } = props;
 
     return (
-        <div className='header-container row'>
-            <div className='header-content col-12'>
+        <div className='header-container'>
+            <div className='header-content '>
                 <div className='header-title-content'>
 
                     <div className='header-icon'>
-                        <GitlabLogo color='white' size={28} />
+                        <ImageSquare color='white' size={28} />
                     </div>
 
                     <div className='header-title'>
-                        <p>{title}</p>
+                        <Link to='/'>{title}</Link>
                     </div>
 
                 </div>
