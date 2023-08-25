@@ -6,6 +6,7 @@
 
 .access-product-go-to-home a {
     display: flex;
+    width: 8%;
     padding: 50px;
     text-decoration: none;
     color: black;

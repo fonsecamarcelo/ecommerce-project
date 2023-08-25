@@ -1,5 +1,4 @@
-
-import {GitlabLogo, ImageSquare, ShoppingCartSimple} from "phosphor-react";
+import { ImageSquare, ShoppingCartSimple } from "phosphor-react";
 
 type Props = {
     title?: string;
@@ -8,15 +7,21 @@ type Props = {
 
 import {Link} from "react-router-dom";
 import './header.css'
+import {useContext} from "react";
+import {CartContext} from "../../services/cartService";
 
 
 const Header = (props: Props) => {
 
     const { title = 'pics found', shoppingCart = false } = props;
 
+    const { getTotalCartAmount } = useContext(CartContext);
+
+    const total = getTotalCartAmount();
+
     return (
         <div className='header-container'>
-            <div className='header-content '>
+            <div className='header-content'>
                 <div className='header-title-content'>
 
                     <div className='header-icon'>
@@ -32,9 +37,11 @@ const Header = (props: Props) => {
                 {shoppingCart && (
                     <div className='header-shopping-cart'>
                         <div className='header-shopping-cart-icon'>
-                            <ShoppingCartSimple color='white' size={26} />
+                            <Link to='/carrinho'>
+                                <ShoppingCartSimple color='white' size={26} />
+                            </Link>
                         </div>
-                        <p>R$ 0,00</p>
+                        <p>{`R$ ${total}`}</p>
                     </div>
                 )}
             </div>

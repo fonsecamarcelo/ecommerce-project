@@ -33,9 +33,9 @@
 }
 
 .header-shopping-cart {
-    margin-right: 1rem;
     display: flex;
     align-items: center;
+    margin-right: 1rem;
 }
 
 .header-shopping-cart-icon {

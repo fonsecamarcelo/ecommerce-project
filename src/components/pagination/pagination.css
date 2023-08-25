@@ -1,0 +1,12 @@
+.pagination {
+    padding: 40px;
+    background-color: aqua;
+}
+
+.button-pagination {
+    /*display: flex;*/
+    /*justify-content:space-around;*/
+    background-color: black;
+    /*border: 0;*/
+    width: 50%;
+}

@@ -18,4 +18,14 @@
   width: 34px;
   border-radius: 50%;
   background-color: black;
+  z-index: 99;
 }
+
+.filter-search {
+  margin-left: -20px;
+  display: flex;
+}
+.filter-search input {
+  padding-left: 20px;
+}
+
