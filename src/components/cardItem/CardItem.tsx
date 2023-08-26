@@ -22,7 +22,7 @@ const CardItem = (props: Props) => {
         <div className='teste row'>
             <div className='card-container col-12'>
                 <div className='card-info'>
-                    <p>{`id ${id}`}</p>
+                    <p>{`Id ${id}`}</p>
                 </div>
                 <div className='card-info'>
                     <img

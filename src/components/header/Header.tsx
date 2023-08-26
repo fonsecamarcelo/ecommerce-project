@@ -6,10 +6,9 @@ type Props = {
 }
 
 import {Link} from "react-router-dom";
-import './header.css'
 import {useContext} from "react";
 import {CartContext} from "../../services/cartService";
-
+import './header.css'
 
 const Header = (props: Props) => {
 

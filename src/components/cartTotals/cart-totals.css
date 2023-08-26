@@ -8,15 +8,14 @@
 }
 
 .cart-totals-content {
-    /*justify-content: center;*/
     align-items: center;
-    /*flex-direction: column;*/
     border: 1px solid black;
+    border-radius: 10px;
     -webkit-box-shadow: -8px -8px 45px -2px rgba(0,0,0,0.54);
     -moz-box-shadow: -8px -8px 45px -2px rgba(0,0,0,0.54);
     box-shadow: -8px -8px 45px -2px rgba(0,0,0,0.54);
     max-width: 100%;
     min-width: 80%;
-    max-height: 100%;
-    min-height: 50%;
+    max-height: 250px;
+    min-height: 150px;
 }

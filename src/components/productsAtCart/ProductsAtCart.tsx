@@ -26,14 +26,14 @@ const ProductsAtCart = (props) => {
                     <span className='col-md'>{`Preço: R$ ${price}`}</span>
 
                     <div className='cart-card-price row'>
-                        <button onClick={() => addToCart(id)}>
-                            <Plus size={24} color='green'/>
+                        <button onClick={() => removeFromCart(id)}>
+                            <Minus size={24} color='red'/>
                         </button>
 
                         <input className='cart-card-price-input' value={cartItems[id]} onChange={(e) => updateCartItemCount(Number(e.target.value), id)}/>
 
-                        <button onClick={() => removeFromCart(id)}>
-                            <Minus size={24} color='red'/>
+                        <button onClick={() => addToCart(id)}>
+                            <Plus size={24} color='green'/>
                         </button>
 
                     </div>

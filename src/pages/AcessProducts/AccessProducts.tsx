@@ -5,12 +5,13 @@ import WithoutItem from "../../components/withoutItem/WithoutItem";
 import {ArrowBendUpLeft} from "phosphor-react";
 
 import './access-products.css'
+import IdBadge from "../../components/idBadge/IdBadge";
 
 const AccessProducts = () => {
     const { id } = useParams();
     const product = cardImages.find((info) => info.id === id);
 
-    const textLorem = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+const textLorem = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.'
 
     return (
         <>
@@ -20,20 +21,29 @@ const AccessProducts = () => {
                 <Link to='/' >{<ArrowBendUpLeft size={26} />}</Link>
             </div>
 
-            <div className='access-product-container'>
+            <div className='access-product-container '>
                 <div className='access-product-content '>
                     {product ? (
-                        <div>
-                            <span>{`id ${product.id}`}</span>
+                        <div className='row'>
 
-                            <img
-                                src={product.download_url}
-                                style={{ width: '200px', height: '200px', margin: '10px' }}
-                            />
-                            <span>{`Autor ${product.author}`}</span>
+                            <div className='access-product-image col-12 col-sm'>
+                                <img
+                                    src={product.download_url}
+                                    // style={{ width: '400px', height: '300px', margin: '10px' }}
+                                />
+                            </div>
 
-                            <h3>Descrição</h3>
-                            <p>{textLorem}</p>
+
+                            <div className='access-product-info col-12 col-md-12'>
+                                <span>{`Id: ${product.id}`}</span>
+                                <span>{`Autor: ${product.author}`}</span>
+                            </div>
+
+                            <div className='access-product-description col-12 col-sm'>
+                                <h3>Descrição</h3>
+                                <p>{textLorem}</p>
+                            </div>
+
                         </div>
                     ) : <WithoutItem />
                     }

@@ -1,0 +1,12 @@
+.id-bagde-container {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    color: black;
+    /*border-radius: 12px;*/
+    font-size: 12px;
+    width: 36px;
+    padding: 2px;
+    height: 20px;
+}
+
+
